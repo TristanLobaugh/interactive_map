@@ -1,0 +1,54 @@
+#map-wrapper{
+	position: relative;
+	width: 750px;
+	margin: auto;
+}
+.red{
+	fill: #ba3a33;
+	color: #ba3a33;
+}
+.blue{
+	fill: #445e96;
+	color: #445e96;
+}
+.open{
+	fill: #c2b280;
+	color: #c2b280;;
+}
+#wrapper svg{
+	background-color: #cacaca;
+}
+.state-info{
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+.state{
+	cursor: pointer;
+}
+#vote-bar-wrapper{
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 750px;
+}
+#vote-bar-wrapper .red{
+	float: right;
+}
+
+.bar{
+	height: 30px;
+}
+#red-bar{
+	background-color: #ba3a33;
+	float: left;
+}
+#blue-bar{
+	background-color: #445e96;
+	float: left;
+}
+#open-bar{
+	background-color: #c2b280;
+	float: left;
+}
