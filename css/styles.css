@@ -1,4 +1,4 @@
-#map-wrapper{
+#wrapper{
 	position: relative;
 	width: 750px;
 	margin: auto;
@@ -6,10 +6,12 @@
 .red{
 	fill: #ba3a33;
 	color: #ba3a33;
+	float: right;
 }
 .blue{
 	fill: #445e96;
 	color: #445e96;
+	float: left;
 }
 .open{
 	fill: #c2b280;
@@ -27,18 +29,19 @@
 	cursor: pointer;
 }
 #vote-bar-wrapper{
-	overflow: hidden;
+/*	overflow: hidden;
 	position: relative;
 	top: 0;
-	left: 0;
+	left: 0;*/
 	width: 750px;
 }
-#vote-bar-wrapper .red{
-	float: right;
+#color-bar{
+	clear: both;
+	color: white;
+	text-align: center;
 }
-
 .bar{
-	height: 30px;
+	height: 25px;
 }
 #red-bar{
 	background-color: #ba3a33;
