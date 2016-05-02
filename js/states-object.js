@@ -10,13 +10,22 @@ function State(id,name,abbr,stateColor,electoralVotes,nameX, nameY,vector, isSma
     this.isSmall = isSmall;
     this.smallStateVal = smallStateVal;
 }
+
+function findSmallSates(){
+    for(var i = 0; i < states.length; i++){
+        if(states[i].isSmall == true){
+            smallStates.push(states[i]);
+        }
+    }
+    console.log(smallStates);
+}
 	
 
 function resetStates(){
     //init arrays
 	//states = vector and data info
 	
-
+    smallStates = [];
     states = [];
 	//Separate array for state, by color
     blueStates = [];
@@ -87,5 +96,6 @@ function resetStates(){
     }
     
     numStates = states.length;
+    findSmallSates();
 
 }

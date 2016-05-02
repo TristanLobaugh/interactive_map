@@ -3,6 +3,7 @@ imApp.controller("imController", function($scope){
 
 	resetStates();
 	$scope.states = states;
+	$scope.smallState = smallStates;
 	calcStateTotals();
 
 	$scope.stateClicked = function(state){

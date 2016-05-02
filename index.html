@@ -37,6 +37,9 @@
 					</foreignObject>
 				</g>
 			</svg>
+			<ul>
+				<li ng-repeat="x in smallState"><span class="badge-label">{{x.abbr}}</span><a href="#"><span ng-click="stateClicked(x); badge={'background-color': (x.stateColor == 'open') ? 'green' : x.stateColor}" ng-style="badge">{{x.electoralVotes}}</span></a></li>
+			</ul>
 		</div>
 	</div>
 
