@@ -17,7 +17,6 @@ function findSmallSates(){
             smallStates.push(states[i]);
         }
     }
-    console.log(smallStates);
 }
 	
 

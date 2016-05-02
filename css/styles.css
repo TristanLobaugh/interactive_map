@@ -55,3 +55,50 @@
 	background-color: #c2b280;
 	float: left;
 }
+ul{
+	list-style-type: none;
+}
+ul .red{
+	background-color: #ba3a33;
+	color: white;
+	float: none;
+}
+ul .blue{
+	background-color: #445e96;
+	color: white;
+	float: none;
+}
+ul .open{
+	background-color: #c2b280;
+	color: white;
+	float: none;
+}
+ul {
+	color: black;
+	text-decoration: none;
+}
+ul li{
+	float: left;
+	margin-right: 5px;
+}
+#states-needed-wrapper{
+	clear: both;
+}
+#dem{
+	color: #445e96;
+	display: block;
+}
+#rep{
+	color: #ba3a33;
+	display: block;
+	clear: both;
+}
+.needed-wrapper{
+	border: 1px solid black;
+	margin: 5px;
+	clear: both;
+}
+.needed{
+	float: left;
+	margin: 5px;
+}

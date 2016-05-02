@@ -38,8 +38,47 @@
 				</g>
 			</svg>
 			<ul>
-				<li ng-repeat="x in smallState"><span class="badge-label">{{x.abbr}}</span><a href="#"><span ng-click="stateClicked(x); badge={'background-color': (x.stateColor == 'open') ? 'green' : x.stateColor}" ng-style="badge">{{x.electoralVotes}}</span></a></li>
+				<li ng-repeat="state in smallState" ng-click="stateClicked(state)"><span class="state {{state.stateColor}}">{{state.abbr}}</span><span>  {{state.electoralVotes}}</span></li>
 			</ul>
+			<div id="states-needed-wrapper">
+				<h3>States needed for 270 votes</h3>
+				<div id="dem-states">
+					<div id="dem">Democrats</div>
+						<div class="needed-wrapper">
+							<div ng-repeat="demState in demStates[0]">
+								<div class="needed"> {{demState.name}}:  {{demState.electoralVotes}}, </div>
+							</div>
+						</div>
+						<div class="needed-wrapper">
+							<div ng-repeat="demState in demStates[1]">
+								<div class="needed"> {{demState.name}}:  {{demState.electoralVotes}}, </div>
+							</div>
+						</div>
+						<div class="needed-wrapper">
+							<div ng-repeat="demState in demStates[2]">
+								<div class="needed"> {{demState.name}}:  {{demState.electoralVotes}}, </div>
+							</div>
+						</div>
+				</div>
+				<div id="rep-states">
+					<div id="rep">Republicans</div>
+						<div class="needed-wrapper">
+							<div ng-repeat="repState in repStates[0]">
+								<div class="needed"> {{repState.name}}:  {{repState.electoralVotes}}, </div>
+							</div>
+						</div>
+						<div class="needed-wrapper">
+							<div ng-repeat="repState in repStates[1]">
+								<div class="needed"> {{repState.name}}:  {{repState.electoralVotes}}, </div>
+							</div>
+						</div>
+						<div class="needed-wrapper">
+							<div ng-repeat="repState in repStates[2]">
+								<div class="needed"> {{repState.name}}:  {{repState.electoralVotes}}, </div>
+							</div>
+						</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
