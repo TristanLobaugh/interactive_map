@@ -10,6 +10,15 @@
 + Github - https://github.com/TristanLobaugh
 + Homepage - http://tristanlobaugh.com
 
+## Demo
+
+[Live Demo](http://tristanlobaugh.com/interactive_map)
+
+## Screenshots
+
+### Main page:
+![alt text](https://raw.githubusercontent.com/TristanLobaugh/interactive_map/master/img/screen_shot.png)
+
 ##Code Examples
 
 ### Code used to calculate the staes needed to get to 270 votes

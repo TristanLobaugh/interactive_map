@@ -38,7 +38,7 @@
 				</g>
 			</svg>
 			<ul>
-				<li ng-repeat="state in smallState" ng-click="stateClicked(state)"><span class="state {{state.stateColor}}">{{state.abbr}}</span><span>  {{state.electoralVotes}}</span></li>
+				<li ng-repeat="state in smallState" ng-click="stateClicked(state)"><span class="indv state {{state.stateColor}}">{{state.abbr}}:</span><span>  {{state.electoralVotes}}</span></li>
 			</ul>
 			<div id="states-needed-wrapper">
 				<h3>States needed for 270 votes</h3>

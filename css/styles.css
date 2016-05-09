@@ -78,8 +78,13 @@ ul {
 	text-decoration: none;
 }
 ul li{
+	padding: 10px;
 	float: left;
 	margin-right: 5px;
+}
+.indv{
+	border-radius: 5px;
+	padding: 5px;
 }
 #states-needed-wrapper{
 	clear: both;
